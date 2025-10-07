@@ -17,5 +17,8 @@ Simple design solution for creating an E-commerce app
 * Backend includes microservices for each service
     * can scale better with microservices in a decoupled environment
 * For DBm used Firestore for document data and user profile
-* For inventory, product, cart and order data, can use Cloud SQL, AlloyDB or Cloud spanner 
+* For inventory, product, cart and order data, can use Cloud SQL, AlloyDB or Cloud spanner
+* All data is streamed into the messagaging service PubSub
+* Stream processing is done in datadlow, a serverless stream processing  service and then store the clean data into a serverless data warehouse BigQuery
+* From there you can use data for machine learning and buiness intelligence 
 
