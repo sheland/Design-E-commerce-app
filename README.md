@@ -11,3 +11,11 @@ Simple design solution for creating an E-commerce app
 ### High level architecture:
 ![unnamed-4](https://github.com/user-attachments/assets/cd27e407-e676-47b2-b9cb-c26cac87b466)
 
+### Explaination 
+* At a high level, add load balancer in front of the frontend layer
+  * used CloudRun for frontend
+* Backend includes microservices for each service
+    * can scale better with microservices in a decoupled environment
+* For DBm used Firestore for document data and user profile
+* For inventory, product, cart and order data, can use Cloud SQL, AlloyDB or Cloud spanner 
+
